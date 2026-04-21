@@ -10,14 +10,11 @@ import {
   Home,
   Pill,
   Settings,
-  User,
   FileText,
   Bell,
   HelpCircle,
   ChevronRight,
   Users,
-  CheckCircle,
-  Ban,
 } from "lucide-react"
 
 import {
@@ -54,17 +51,12 @@ const mainNavItems = [
     icon: Heart,
     items: [
       { title: "Doenças Crônicas", href: "/minha-saude/doencas-cronicas", icon: Activity },
-      { title: "Perfil Clínico", href: "/perfil-clinico", icon: User },
     ],
   },
   {
     title: "Medicamentos",
     icon: Pill,
     href: "/medicamentos",
-    items: [
-      { title: "Permitidos", href: "/medicamentos?tab=allowed", icon: CheckCircle },
-      { title: "Não Permitidos", href: "/medicamentos?tab=forbidden", icon: Ban },
-    ],
   },
   {
     title: "Contatos de Emergência",
@@ -219,7 +211,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <Link href="/perfil-clinico">
+              <Link href="/perfil">
                 <Avatar className="h-8 w-8">
                   <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Avatar" />
                   <AvatarFallback className="bg-[#52AF7A] text-white">MA</AvatarFallback>
