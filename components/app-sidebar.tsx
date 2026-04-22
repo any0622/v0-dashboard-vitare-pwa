@@ -44,7 +44,7 @@ const mainNavItems = [
   {
     title: "Início",
     icon: Home,
-    href: "/",
+    href: "/dashboard",
   },
   {
     title: "Minha Saúde",
@@ -112,7 +112,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <Link href="/">
+              <Link href="/dashboard">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-[#52AF7A] text-white">
                   <Heart className="size-4" />
                 </div>
