@@ -1,11 +1,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { 
-  Heart, 
-  Shield, 
-  Bell, 
-  Users, 
-  Smartphone, 
+import {
+  Heart,
+  Shield,
+  Bell,
+  Users,
+  Smartphone,
   Clock,
   CheckCircle,
   ArrowRight
@@ -49,19 +49,19 @@ export default function LandingPage() {
               Sua saúde, protegida e acessível
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-balance">
-              Gerencie sua saúde de forma 
-              <span className="text-[#52AF7A]"> inteligente</span> e 
+              Gerencie sua saúde de forma
+              <span className="text-[#52AF7A]"> inteligente</span> e
               <span className="text-[#52AF7A]"> segura</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed text-pretty max-w-2xl mx-auto">
-              O Vitare é seu companheiro digital de saúde. Mantenha suas informações médicas 
-              organizadas, acessíveis em emergências e compartilhe com profissionais de saúde 
+              O Vitare é seu companheiro digital de saúde. Mantenha suas informações médicas
+              organizadas, acessíveis em emergências e compartilhe com profissionais de saúde
               com total segurança.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/cadastro">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="w-full sm:w-auto bg-[#52AF7A] hover:bg-[#449966] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg shadow-[#52AF7A]/25 transition-all hover:shadow-xl hover:shadow-[#52AF7A]/30"
                 >
                   Criar Conta
@@ -69,9 +69,9 @@ export default function LandingPage() {
                 </Button>
               </Link>
               <Link href="/login">
-                <Button 
-                  size="lg" 
-                  variant="outline" 
+                <Button
+                  size="lg"
+                  variant="outline"
                   className="w-full sm:w-auto border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg font-semibold rounded-xl"
                 >
                   Entrar
@@ -90,7 +90,7 @@ export default function LandingPage() {
               Tudo que você precisa para cuidar da sua saúde
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Funcionalidades pensadas para facilitar o seu dia a dia e garantir 
+              Funcionalidades pensadas para facilitar o seu dia a dia e garantir
               atendimento rápido em situações de emergência.
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function LandingPage() {
                 Perfil Médico Completo
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Mantenha todas as suas informações de saúde em um só lugar: 
+                Mantenha todas as suas informações de saúde em um só lugar:
                 doenças crônicas, alergias, tipo sanguíneo e muito mais.
               </p>
             </div>
@@ -119,7 +119,7 @@ export default function LandingPage() {
                 Alertas de Emergência
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Em situações críticas, envie alertas instantâneos para contatos 
+                Em situações críticas, envie alertas instantâneos para contatos
                 de emergência e unidades de saúde próximas.
               </p>
             </div>
@@ -133,7 +133,7 @@ export default function LandingPage() {
                 Contatos de Emergência
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Cadastre familiares e responsáveis para serem notificados 
+                Cadastre familiares e responsáveis para serem notificados
                 automaticamente em caso de emergência médica.
               </p>
             </div>
@@ -147,7 +147,7 @@ export default function LandingPage() {
                 Acesso Offline
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Aplicativo PWA que funciona mesmo sem internet. Suas informações 
+                Aplicativo PWA que funciona mesmo sem internet. Suas informações
                 críticas sempre acessíveis quando você precisar.
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function LandingPage() {
                 Dados Seguros
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Suas informações médicas são criptografadas e protegidas seguindo 
+                Suas informações médicas são criptografadas e protegidas seguindo
                 os mais altos padrões de segurança.
               </p>
             </div>
@@ -175,7 +175,7 @@ export default function LandingPage() {
                 Histórico Médico
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Acompanhe todo o seu histórico de saúde, consultas e medicamentos 
+                Acompanhe todo o seu histórico de saúde, consultas e medicamentos
                 em uma linha do tempo organizada.
               </p>
             </div>
@@ -192,7 +192,7 @@ export default function LandingPage() {
                 Por que escolher o Vitare?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Desenvolvido com foco na experiência do usuário e nas necessidades 
+                Desenvolvido com foco na experiência do usuário e nas necessidades
                 reais de pacientes e profissionais de saúde.
               </p>
               <ul className="space-y-4">
@@ -276,13 +276,13 @@ export default function LandingPage() {
             Comece a cuidar da sua saúde hoje
           </h2>
           <p className="text-lg text-white/90 mb-10 max-w-2xl mx-auto">
-            Junte-se a milhares de pessoas que já confiam no Vitare para 
+            Junte-se a milhares de pessoas que já confiam no Vitare para
             gerenciar suas informações de saúde.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/cadastro">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="w-full sm:w-auto bg-white text-[#52AF7A] hover:bg-gray-100 px-8 py-6 text-lg font-semibold rounded-xl"
               >
                 Criar Conta Gratuita
@@ -290,10 +290,10 @@ export default function LandingPage() {
               </Button>
             </Link>
             <Link href="/login">
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="w-full sm:w-auto border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold rounded-xl"
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto bg-gray-300 border-white text-[#52AF7A] hover:bg-white/10 px-8 py-6 text-lg font-semibold rounded-xl"
               >
                 Já tenho conta
               </Button>
