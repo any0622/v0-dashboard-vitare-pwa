@@ -293,7 +293,7 @@ export default function LandingPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto bg-gray-300 border-white text-[#52AF7A] hover:bg-white/10 px-8 py-6 text-lg font-semibold rounded-xl"
+                className="w-full sm:w-auto bg-[#52AF7A] border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold rounded-xl"
               >
                 Já tenho conta
               </Button>
