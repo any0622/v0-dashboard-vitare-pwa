@@ -1,8 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { usePathname } from "next/navigation"
-import Link from "next/link"
+import { useLocation, Link } from "react-router-dom"
 import {
   Activity,
   Calendar,
@@ -94,7 +93,7 @@ const secondaryNavItems = [
 ]
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const pathname = usePathname()
+  const pathname = useLocation().pathname
 
   const isItemActive = (href?: string, items?: { href: string }[]) => {
     if (href && href !== "#") {
@@ -112,7 +111,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <Link href="/dashboard">
+              <Link to="/dashboard">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-[#52AF7A] text-white">
                   <Heart className="size-4" />
                 </div>
@@ -156,7 +155,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                                   asChild
                                   className={isSubActive ? "text-[#52AF7A] bg-[#52AF7A]/10" : ""}
                                 >
-                                  <Link href={subItem.href}>
+                                  <Link to={subItem.href}>
                                     {subItem.icon && (
                                       <subItem.icon className={`h-4 w-4 mr-2 ${isSubActive ? "text-[#52AF7A]" : ""}`} />
                                     )}
@@ -178,7 +177,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                       className={isActive ? "text-[#52AF7A] bg-[#52AF7A]/10" : ""}
                       asChild
                     >
-                      <Link href={item.href || "#"}>
+                      <Link to={item.href || "#"}>
                         <item.icon className={isActive ? "text-[#52AF7A]" : ""} />
                         <span>{item.title}</span>
                       </Link>
@@ -196,7 +195,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               {secondaryNavItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton tooltip={item.title} asChild>
-                    <Link href={item.href}>
+                    <Link to={item.href}>
                       <item.icon />
                       <span>{item.title}</span>
                     </Link>
@@ -211,7 +210,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <Link href="/perfil">
+              <Link to="/perfil">
                 <Avatar className="h-8 w-8">
                   <AvatarImage src="/placeholder.svg?height=32&width=32" alt="Avatar" />
                   <AvatarFallback className="bg-[#52AF7A] text-white">MA</AvatarFallback>

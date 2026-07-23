@@ -1,24 +1,6 @@
-"use client"
-
 import { useEffect, useState } from "react"
-import dynamic from "next/dynamic"
-
-const MapContainer = dynamic(
-  () => import("react-leaflet").then((mod) => mod.MapContainer),
-  { ssr: false }
-)
-const TileLayer = dynamic(
-  () => import("react-leaflet").then((mod) => mod.TileLayer),
-  { ssr: false }
-)
-const Marker = dynamic(
-  () => import("react-leaflet").then((mod) => mod.Marker),
-  { ssr: false }
-)
-const Popup = dynamic(
-  () => import("react-leaflet").then((mod) => mod.Popup),
-  { ssr: false }
-)
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
+import type { Icon } from "leaflet"
 
 interface LocationMapProps {
   latitude: number
@@ -28,7 +10,7 @@ interface LocationMapProps {
 
 export function LocationMap({ latitude, longitude, patientName }: LocationMapProps) {
   const [isMounted, setIsMounted] = useState(false)
-  const [customIcon, setCustomIcon] = useState<L.Icon | null>(null)
+  const [customIcon, setCustomIcon] = useState<Icon | null>(null)
 
   useEffect(() => {
     setIsMounted(true)

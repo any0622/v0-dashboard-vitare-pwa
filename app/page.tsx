@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import {
   Heart,
@@ -25,12 +25,12 @@ export default function LandingPage() {
               <span className="text-xl font-bold text-gray-900">Vitare</span>
             </div>
             <div className="flex items-center gap-3">
-              <Link href="/login">
+              <Link to="/login">
                 <Button variant="ghost" className="text-gray-600 hover:text-[#52AF7A]">
                   Entrar
                 </Button>
               </Link>
-              <Link href="/cadastro">
+              <Link to="/cadastro">
                 <Button className="bg-[#52AF7A] hover:bg-[#449966] text-white">
                   Criar Conta
                 </Button>
@@ -59,7 +59,7 @@ export default function LandingPage() {
               com total segurança.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/cadastro">
+              <Link to="/cadastro">
                 <Button
                   size="lg"
                   className="w-full sm:w-auto bg-[#52AF7A] hover:bg-[#449966] text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg shadow-[#52AF7A]/25 transition-all hover:shadow-xl hover:shadow-[#52AF7A]/30"
@@ -68,7 +68,7 @@ export default function LandingPage() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Link href="/login">
+              <Link to="/login">
                 <Button
                   size="lg"
                   variant="outline"
@@ -280,7 +280,7 @@ export default function LandingPage() {
             gerenciar suas informações de saúde.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/cadastro">
+            <Link to="/cadastro">
               <Button
                 size="lg"
                 className="w-full sm:w-auto bg-white text-[#52AF7A] hover:bg-gray-100 px-8 py-6 text-lg font-semibold rounded-xl"
@@ -289,7 +289,7 @@ export default function LandingPage() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/login">
+            <Link to="/login">
               <Button
                 size="lg"
                 variant="outline"
@@ -316,13 +316,13 @@ export default function LandingPage() {
               2026 Vitare. Todos os direitos reservados.
             </p>
             <div className="flex items-center gap-6">
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link to="#" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Privacidade
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link to="#" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Termos
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link to="#" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Contato
               </Link>
             </div>

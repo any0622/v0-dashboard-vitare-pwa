@@ -1,5 +1,4 @@
-"use client"
-
+import { Link } from "react-router-dom"
 import {
   SidebarInset,
   SidebarProvider,
@@ -29,8 +28,8 @@ export default function Dashboard() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem className="hidden md:block">
-                <BreadcrumbLink href="/dashboard" className="text-[#52AF7A] hover:text-[#52AF7A]/80">
-                  Vitare
+                <BreadcrumbLink asChild className="text-[#52AF7A] hover:text-[#52AF7A]/80">
+                  <Link to="/dashboard">Vitare</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />

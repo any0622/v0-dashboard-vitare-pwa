@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Heart } from "lucide-react"
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
 export function LoginForm({
   className,
@@ -55,7 +55,7 @@ export function LoginForm({
                 Senha
               </Label>
               <Link
-                href="#"
+                to="#"
                 className="text-sm text-[#52AF7A] underline-offset-4 hover:underline"
               >
                 Esqueceu a senha?
@@ -111,7 +111,7 @@ export function LoginForm({
         <div className="text-center text-sm text-gray-600">
           Não tem uma conta?{" "}
           <Link
-            href="/cadastro"
+            to="/cadastro"
             className="text-[#52AF7A] underline-offset-4 hover:underline font-medium"
           >
             Cadastre-se

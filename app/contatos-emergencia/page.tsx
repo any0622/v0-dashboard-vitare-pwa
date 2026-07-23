@@ -1,5 +1,4 @@
-"use client"
-
+import { Link } from "react-router-dom"
 import { AppSidebar } from "@/components/app-sidebar"
 import { EmergencyContacts } from "@/components/emergency-contacts"
 import { EmergencyFab } from "@/components/emergency-fab"
@@ -30,10 +29,10 @@ export default function EmergencyContactsPage() {
             <BreadcrumbList>
               <BreadcrumbItem className="hidden md:block">
                 <BreadcrumbLink
-                  href="/"
+                  asChild
                   className="text-[#52AF7A] hover:text-[#458f63]"
                 >
-                  Início
+                  <Link to="/dashboard">Início</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />

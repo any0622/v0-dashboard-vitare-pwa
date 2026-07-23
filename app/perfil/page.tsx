@@ -1,6 +1,5 @@
-"use client"
-
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import { User, Mail, Phone, MapPin, Calendar, Shield, Edit2, Save, X } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -65,8 +64,8 @@ export default function UserProfilePage() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="text-[#52AF7A]">
-                  Início
+                <BreadcrumbLink asChild className="text-[#52AF7A]">
+                  <Link to="/dashboard">Início</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />

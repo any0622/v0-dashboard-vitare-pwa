@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Heart } from "lucide-react"
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
 function formatCPF(value: string): string {
   const numbers = value.replace(/\D/g, "")
@@ -160,7 +160,7 @@ export function SignupForm({
           <div className="text-center text-sm text-gray-600">
             Já tem uma conta?{" "}
             <Link
-              href="/login"
+              to="/login"
               className="font-medium text-[#52AF7A] hover:text-[#469968] underline underline-offset-4"
             >
               Entrar
